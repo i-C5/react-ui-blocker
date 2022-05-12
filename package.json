@@ -1,6 +1,6 @@
 {
   "name": "@i-c5/react-ui-blocker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A UI blocker in react.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
