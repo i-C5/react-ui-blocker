@@ -1,8 +1,9 @@
 {
-  "name": "react-ui-blocker",
-  "version": "1.0.0",
+  "name": "@i-c5/react-ui-blocker",
+  "version": "1.0.1",
   "description": "A UI blocker in react.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "author": "C5",
   "license": "MIT",
   "peerDependencies": {
@@ -23,9 +24,17 @@
     "react-dom": "^18.1.0",
     "react-loading": "^2.0.3"
   },
-  "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  }
+    "build-storybook": "build-storybook",
+    "build": "node esbuild.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-C5/react-ui-blocker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/i-C5/react-ui-blocker/issues"
+  },
+  "homepage": "https://github.com/i-C5/react-ui-blocker#readme"
 }
