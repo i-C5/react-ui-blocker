@@ -2,6 +2,7 @@ const esbuild = require('esbuild')
 
 const defaultConfig = {
   entryPoints: ['src/index.jsx'],
+  inject: ['src/react-shim.js'],
   bundle: true,
 }
 

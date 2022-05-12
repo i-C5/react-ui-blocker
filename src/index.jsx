@@ -1,6 +1,20 @@
 import ReactLoading from 'react-loading'
 
-function UiBlocker({ children, block = false }) {
+function UiBlocker({
+  children,
+  block = false,
+  loader = {
+    type: '' ||'spokes',
+    color: '' || '#02ac4e',
+    height: ''|| 50,
+    width: ''|| 50,
+  },
+  loadingText = {
+    text: '' || 'Please wait...',
+    color: '',
+    size: '',
+  },
+}) {
   return (
     <div
       className="blocking-div"
@@ -11,12 +25,14 @@ function UiBlocker({ children, block = false }) {
       {block ? (
         <div className="loader-div">
           <ReactLoading
-            type="spokes"
-            color="#02ac4e"
-            height={100}
-            width={100}
+            type={loader.type}
+            color={loader.color}
+            height={loader.height}
+            width={loader.width}
           />
-          <p>Please Wait ....</p>
+          <p style={{ color: loadingText.color, size: loadingText.size }}>
+            {loadingText.text}
+          </p>
         </div>
       ) : null}
       <>{children}</>
@@ -35,7 +51,7 @@ function UiBlocker({ children, block = false }) {
           max-height: 100vh;
           height: 100vh;
           background: #f7f7f7;
-          opacity: 0.71;
+          opacity: 0.5;
           z-index: 9999;
           display: flex;
           flex-direction: column;
