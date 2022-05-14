@@ -1,6 +1,8 @@
 # React UI Blocker
 
-A simple loader animation to block UI view while AJAX request under process.
+Block UI interaction on your React App.
+
+## [See Demo Here](https://react-ui-blocker-doc.vercel.app/)
 
 ### Installation
 
@@ -13,11 +15,13 @@ or
 ### Usage
 
 ```
-    import UiBlocker from @i-c5/react-ui-blocker
+import UiBlocker from @i-c5/react-ui-blocker
+
+export default function SomeFunction({ children}){
 
     <UiBlocker block="true">
-        <>
         {children}
-        </>
     </UiBlocker>
+
+}
 ```

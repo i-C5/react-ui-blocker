@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/i-C5/react-ui-blocker/issues"
   },
-  "homepage": "https://github.com/i-C5/react-ui-blocker#readme",
+  "homepage": "https://react-ui-blocker-doc.vercel.app",
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
